@@ -1,305 +1,1 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>وكالة SL - تطبيقات مبتكرة</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #000;
-      color: #FFD700;
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #111;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      color: #FFD700;
-      margin: 0 15px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: white;
-    }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #000, #222);
-    }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      animation: dropIn 1s ease-in-out;
-    }
-    .hero p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
-      animation: dropIn 1.5s ease-in-out;
-    }
-    @keyframes dropIn {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    section {
-      padding: 60px 20px;
-      background-color: #111;
-    }
-    .section-divider {
-      height: 2px;
-      background-color: #FFD700;
-      margin: 40px auto;
-      width: 80%;
-    }
-    .apps-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
-    .app-item {
-      background-color: #222;
-      padding: 25px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.3s, background-color 0.3s;
-    }
-    .app-item:hover {
-      transform: translateY(-5px);
-      background-color: #333;
-    }
-    .app-logo {
-      width: 70px;
-      height: auto;
-      margin-bottom: 10px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-      transition: transform 0.3s ease;
-    }
-    .app-logo:hover {
-      transform: scale(1.1);
-    }
-    .app-item a {
-      display: block;
-      margin-top: 10px;
-      color: #FFD700;
-      text-decoration: none;
-    }
-    .app-item a:hover {
-      color: white;
-    }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 50px;
-      font-size: 0.9em;
-    }
-    form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea, select, button {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      font-family: 'Cairo', sans-serif;
-    }
-    button {
-      background-color: #FFD700;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: white;
-    }
-    .external-links {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .external-links a {
-      display: inline-block;
-      margin: 0 10px;
-      color: #FFD700;
-      text-decoration: none;
-    }
-    .external-links a:hover {
-      color: white;
-    }
-    .nav-list {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      justify-content: center;
-    }
-    .nav-list li {
-      margin: 0 10px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png.jpg" alt="شعار SL" />
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#home">الرئيسية</a></li>
-        <li><a href="#apps">تطبيقاتنا</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">الخدمات</a></li>
-        <li><a href="#admin">طلب الإشراف</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-        <li><a href="#privacy-policy">سياسة الخصوصية</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero" id="home">
-    <h1>وكالة SL</h1>
-    <p>وكالة سورية متخصصة في برامج البث المباشر</p>
-  </section>
-
-  <section id="apps">
-    <h2 style="text-align: center; color: #FFD700;">تطبيقاتنا</h2>
-    <p style="text-align: center; color: #FFD700; max-width: 800px; margin: auto;">
-      نقدم لك مجموعة من التطبيقات المبتكرة التي توفر لك فرصًا كبيرة للحصول على دخل ضخم.
-    </p>
-    <div class="apps-list">
-      <div class="app-item">
-        <img src="unnamed.webp" alt="Livchat logo" class="app-logo">
-        <h3>Livchat</h3>
-        <p>تواصل مباشر عبر الفيديو مع جمهورك.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.awesome.onlinevideochat" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="chamet.webp" alt="Chamet logo" class="app-logo">
-        <h3>Chamet</h3>
-        <p>تعارف ودردشة مع أناس من حول العالم.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.hkfuliao.chamet" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="higo.webp" alt="HIGO logo" class="app-logo">
-        <h3>HIGO</h3>
-        <p>بث مباشر وتفاعل لكسب الدخل.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.global.hiyapro" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="po.webp" alt="Popo logo" class="app-logo">
-        <h3>Popo</h3>
-        <p>فيديوهات حية وجني الأرباح من المتابعين.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="ola.webp" alt="Olamet logo" class="app-logo">
-        <h3>Olamet</h3>
-        <p>تفاعل حي مع جمهور عالمي.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.olamet.mobile" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="super.webp" alt="Super Live logo" class="app-logo">
-        <h3>Super live</h3>
-        <p>مزايا بث مميزة وفرص ربح.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.superlive.liveapp" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="mako.webp" alt="Mako logo" class="app-logo">
-        <h3>Mako</h3>
-        <p>بناء جمهور وربح مباشر.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.matchu.machat" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="tigo.webp" alt="Tigo logo" class="app-logo">
-        <h3>Tigo</h3>
-        <p>تواصل لحظي وفرص مالية مباشرة.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.tigo.flower" target="_blank">تحميل التطبيق</a>
-      </div>
-      <div class="app-item">
-        <img src="emma.webp" alt="Emma logo" class="app-logo">
-        <h3>Tigo</h3>
-        <p>تواصل لحظي وفرص ربحية مباشرة.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.emmaProjectse.emmala.emma&pcampaignid=web_share" target="_blank">تحميل التطبيق</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="about">
-    <h2 style="text-align: center; color: #FFD700;">من نحن</h2>
-    <p style="text-align: center; max-width: 800px; margin: auto; line-height: 1.8;">
-      نحن في <strong>وكالة SL</strong> نهتم بدعم وتمكين الفتيات الباحثات عن فرصة حقيقية للدخل والاستقلال المالي من خلال عالم البث المباشر. <br><br>
-      إذا كنتِ طموحة، وتملكين شخصية مرحة أو حضور مميز، فنحن هنا لمساعدتك على تحويل وقتك ومهاراتك إلى مصدر دخل حقيقي وثابت، من هاتفك فقط، ومن أي مكان.
-      <br><br>
-      نقدم لكِ مجموعة من التطبيقات الموثوقة، ونوفر لكِ التدريب والدعم الفني، بالإضافة إلى فرص للإشراف وبدء العمل ضمن بيئة آمنة ومحترمة، مع دخل شهري يصل لآلاف الدولارات حسب نشاطك وتفاعلك.
-      <br><br>
-      هدفنا واضح: <strong>نساعدك تبنين مستقبل مالي مستقر، بثقة وأمان</strong>. إذا كنتِ مستعدة للبدء، فنحن بجانبك في كل خطوة.
-    </p>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="services">
-    <h2 style="text-align: center; color: #FFD700;">الخدمات</h2>
-    <p style="text-align: center; max-width: 800px; margin: auto; line-height: 1.8;">
-      في <strong>وكالة SL</strong> نحن لا نوفر فقط تطبيقات بث مباشر، بل نقدم لكِ منظومة دعم متكاملة لتبدأي وتنجحي:
-      <br><br>
-      🔸 <strong>تدريب مجاني</strong>: نعلّمك خطوة بخطوة كيف تشتغلي كمذيعة بث مباشر، كيف تتواصلي مع الجمهور، وكيف تكبري دخلك بسرعة.
-      <br>
-      🔸 <strong>إشراف ودعم دائم</strong>: فريق إشراف نسائي يرافقك من أول يوم، يساعدك ويرد على استفساراتك في أي وقت.
-      <br>
-      🔸 <strong>اختيار التطبيق الأنسب لكِ</strong>: نوفر لكِ أكثر من 8 تطبيقات مختلفة، ونرشدك للتطبيق الأنسب حسب شخصيتك.
-      <br>
-      🔸 <strong>فرص مالية حقيقية</strong>: كل ما عليكِ هو الالتزام والتفاعل، وستحصلين على دخل ثابت قابل للزيادة شهريًا.
-    </p>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="admin">
-    <h2 style="text-align: center; color: #FFD700;">طلب الإشراف</h2>
-    <p style="text-align: center; max-width: 800px; margin: auto;">
-      نحن نوفر لكِ فرصة الإشراف على مجموعة من المذيعات في هذه التطبيقات، والمساهمة في زيادة دخلنا ودخلهم. إذا كنتِ تملكين الخبرة والدعم اللازمين للإشراف، يمكنك التقديم الآن!
-    </p>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="contact">
-    <h2 style="text-align: center; color: #FFD700;">تواصل معنا</h2>
-    <form action="https://formspree.io/f/mknakgln" method="POST">
-      <input type="text" name="name" placeholder="الاسم" required>
-      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
-      <textarea name="message" rows="4" placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال رسالة</button>
-    </form>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <footer>
-    <div class="external-links">
-      <a href="https://www.instagram.com/lolo.agency.2024" target="_blank">إنستغرام</a>
-      <a href="https://wa.me/971502894560" target="_blank">واتساب</a>
-    </div>
-    <p>&copy; 2025 وكالة SL جميع الحقوق محفوظة.</p>
-  </footer>
-</body>
-</html>
